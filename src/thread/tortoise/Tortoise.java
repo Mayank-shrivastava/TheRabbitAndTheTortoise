@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class Tortoise extends Thread {
 
-    private static final int NEW_MILESTONES = 5;
+    private static final int MILESTONES = 5;
 
     public Tortoise() {
         super("Tortoise");
@@ -12,7 +12,7 @@ public class Tortoise extends Thread {
 
     @Override
     public void run() {
-        for (int index = 0; index < NEW_MILESTONES; index++) {
+        for (int index = 0; index < MILESTONES; index++) {
             switch (index) {
                 case 0 -> System.out.println("The tortoise has started from the start line!");
                 case 1 -> System.out.println("The tortoise has reached the Cool River!");
